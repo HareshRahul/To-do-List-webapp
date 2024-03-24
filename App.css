@@ -1,0 +1,101 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.todo-container {
+  margin-top: 20px;
+}
+
+
+input[type="text"] {
+  padding: 8px;
+  font-family: monospace;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 330px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  font-family: monospace;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 8px;
+  margin-top: 5px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: monospace;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s ease-in;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+li:hover {
+  background-color: #61bee9;
+}
+
+button.delete {
+  background-color: #f44336;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button.delete:hover {
+  background-color: #d32f2f;
+}
+h1{
+  font-size: 40px;
+  font-family: monospace;
+  color: aliceblue;
+}
+@keyframes pop-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pop-up-text {
+  animation: pop-up 2s ease-in-out;
+}
+
